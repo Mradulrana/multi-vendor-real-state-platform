@@ -12,11 +12,13 @@ export default function NavBar() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#" className="text-gray-600 hover:text-blue-900 font-medium">Buy</Link>
+          <Link href="/search" className="text-gray-600 hover:text-blue-900 font-medium">Buy</Link>
           <Link href="#" className="text-gray-600 hover:text-blue-900 font-medium">Sell</Link>
         </nav>
 
         <div className="flex items-center gap-4">
+          <Link href="/auth" className="text-gray-600 hover:text-blue-900 font-medium hidden sm:block">Login / Register</Link>
+          <Link href="/profile" className="text-gray-600 hover:text-blue-900 font-medium hidden sm:block">Profile</Link>
           <button className="bg-blue-900 hover:bg-blue-800 text-white px-4 py-2 rounded-md font-medium transition-colors">
             Post Property
           </button>
